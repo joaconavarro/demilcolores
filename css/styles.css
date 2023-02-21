@@ -1,0 +1,72 @@
+@media screen and (max-width: 700px){
+    .main{
+        grid-column: span 3;
+    }
+    .promos{
+        grid-column: span 4;
+    }
+}
+
+@media screen and (min-width: 701px){
+    .main{
+        grid-column: span 2;
+    }
+    
+}
+html{
+    background-color: #842F56;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main-layout{
+    margin: 1rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.header{
+    padding-bottom: 1rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.main{
+    padding: 1rem;
+    text-align: center;
+    background-color: #2acec0;
+}
+.menu{
+    text-align: center;
+}
+.promos{
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+ul.vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #000!important;
+    background-color: #f1f1f1!important;  
+    min-height: 100dvh;  
+}
+ul.vertical a.active {
+    background-color: #2acec0;
+    color: white;
+  }
+  ul.vertical a.menu:hover{
+    background-color: grey;
+}
+ul.vertical li a{
+    display: block;
+    color: #000;
+    padding: 0.5rem;
+    text-decoration: none; 
+    font-size: 1.5rem;
+
+}
+
+.grid-col-span4{
+    grid-column: span 4;
+}
