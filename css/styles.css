@@ -1,6 +1,9 @@
 @media screen and (max-width: 700px){
+    .main-layout{
+        margin: 2svw;
+    }
     .main{
-        grid-column: span 3;
+        grid-column: span 4;
     }
     .promos{
         grid-column: span 4;
@@ -8,63 +11,83 @@
 }
 
 @media screen and (min-width: 701px){
+    .main-layout{
+        margin: 2rem;
+    }
     .main{
-        grid-column: span 2;
+        grid-column: span 3;
     }
     
 }
 html{
-    background-color: #842F56;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:  #842F56;
 }
 .main-layout{
-    margin: 1rem;
     display: grid;
+    padding: 1.5rem;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(33, 38, 44);
 }
 
 .header{
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     color: aliceblue;
     text-align: center;
 }
 
 .main{
-    padding: 1rem;
     text-align: center;
-    background-color: #2acec0;
+    background-image: url("/DeMilColores/jpegs/pintu/20230105_104902.jpg");
+    background-size: 1200px, 800px;
+    background-position: center;
+}
+.main-text{
+    margin: 2svw;
+    padding: 1rem;
+    background-color: rgb(107, 240, 222);
 }
 .menu{
-    text-align: center;
+    display: grid;
+    position: sticky;
+    top:0%;
+    
+    grid-column:  span 4;
+    padding-bottom: 1rem;
+
+
 }
 .promos{
     background-color: #f1f1f1;
     text-align: center;
 }
 
-ul.vertical {
+ul.vertical {  
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
     color: #000!important;
     background-color: #f1f1f1!important;  
-    min-height: 100dvh;  
+    text-align: center;
 }
 ul.vertical a.active {
+    width: 100%;
     background-color: #2acec0;
     color: white;
-  }
-  ul.vertical a.menu:hover{
+}
+
+ul.vertical a.menu:hover{
     background-color: grey;
 }
 ul.vertical li a{
-    display: block;
+    display: inline-block;
     color: #000;
     padding: 0.5rem;
     text-decoration: none; 
     font-size: 1.5rem;
-
 }
 
 .grid-col-span4{
