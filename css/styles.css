@@ -8,6 +8,17 @@
     .promos{
         grid-column: span 4;
     }
+    .news{
+        padding-top: none;
+        grid-column: span 4;
+    }
+    .news-img{
+        grid-column: span 4;
+        padding-top: none;
+    }
+    .articulos{
+        grid-column: span 4;
+    }
 }
 
 @media screen and (min-width: 701px){
@@ -17,11 +28,23 @@
     .main{
         grid-column: span 3;
     }
+    .news{
+        padding-top: 5rem;
+        grid-column: span 2;
+    }
+    .news-img{
+        padding-top: 5rem;
+        grid-column: span 2;
+    }
+
+
     
 }
 html{
     background-color:  #842F56;
 }
+
+/* Main Sections */
 .main-layout{
     display: grid;
     padding: 1.5rem;
@@ -38,14 +61,15 @@ html{
 
 .main{
     text-align: center;
-    background-image: url("/DeMilColores/jpegs/pintu/20230105_104902.jpg");
+    background-image: url("https://raw.githubusercontent.com/joaconavarro/demilcolores/master/jpegs/pintu/20230105_104902.jpg");
     background-size: 1200px, 800px;
     background-position: center;
 }
 .main-text{
     margin: 2svw;
     padding: 1rem;
-    background-color: rgb(107, 240, 222);
+    color: azure;
+    background-color: #842F56;
 }
 .menu{
     display: grid;
@@ -58,9 +82,25 @@ html{
 
 }
 .promos{
-    background-color: #f1f1f1;
+    background-color: #a1c3f5;
     text-align: center;
 }
+.news{
+    color: azure;
+}
+.news-img{
+    background-image: url("https://raw.githubusercontent.com/joaconavarro/demilcolores/master/jpegs/pintu/20230105_123303.jpg");
+    background-size: 700px, 400px;
+    background-position:center;
+}
+
+.articulos{
+    padding-top: 5rem;
+    color: azure;
+}
+
+/* Menu, fotos, textos */
+
 
 ul.vertical {  
     display: grid; 
@@ -70,7 +110,6 @@ ul.vertical {
     margin: 0;
     padding: 0;
     color: #000!important;
-    background-color: #f1f1f1!important;  
     text-align: center;
 }
 ul.vertical a.active {
@@ -79,10 +118,17 @@ ul.vertical a.active {
     color: white;
 }
 
-ul.vertical a.menu:hover{
-    background-color: grey;
+ul.vertical a.active:hover{
+    background-color: #842F56;
 }
+
+ul.vertical a.menu:hover{
+    background-color: #a1c3f5;
+}
+
 ul.vertical li a{
+    background-color: azure;
+    width: 100%;
     display: inline-block;
     color: #000;
     padding: 0.5rem;
@@ -92,5 +138,8 @@ ul.vertical li a{
 
 .grid-col-span4{
     grid-column: span 4;
+}
+.grid-col-span2{
+    grid-column: span 2;
 }
 /*First Commit
