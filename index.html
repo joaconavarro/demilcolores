@@ -7,6 +7,7 @@
     <title>De Mil Colores</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/slide.js"></script>
+    
 </head>
 <body>
   <div class="main-layout" id="home">
@@ -28,7 +29,7 @@
         
       </ul>
     </div>
-    <main class="main">
+    <main class="main column-span-4-mob">
         <p class="main-text">Bienvenido a De Mil Colores, somos una pinturería de Moreno con mas de 25 años
           de experiencia, un excelente staff, las mejores marcas, precios, promociones, y etc.
           Estamos ubicados en Avenida Del Libertador 525 y España 284, a pocas cuadras de la estación.
@@ -36,7 +37,7 @@
           Los esperamos!
         </p>
     </main>
-    <div class="promos">
+    <div class="promos column-span-4-mob">
       <h1>PROMOS</h1>
       <a href="https://www.instagram.com/demilcolores_pinturerias/" target="_blank">
       <img src="https://raw.githubusercontent.com/joaconavarro/demilcolores/master/jpegs/pintu/D_NQ_NP_2X_749071-MLA31050691345_062019-F.webp"
@@ -44,7 +45,7 @@
       <h2> Casablanca Performance Interior x 20 Litros <br> $18680</h2>
     </div>
 
-    <span class="news" id="news">
+    <span class="news column-span-4-mob column-span-2-pc" id="news">
       <span>
         <h2>News</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
@@ -74,15 +75,39 @@
         </p>
       </span>            
     </span>
-    <div class="news-img">
+    <div class="news-img column-span-2-pc">
       
     </div>
 
-    <div class="articulos" id="articulos">
+    <div class="articulos column-span-4-mob column-span-2-pc" id="articulos">
       <h2>Artículos</h2>
       <img src="https://raw.githubusercontent.com/joaconavarro/demilcolores/master/jpegs/pintu/20230222_110659.jpg"
       alt="Pintu productos" width="100%">
     </div>
+
+
+    <div class="muestrario column-span-4-mob column-span-2-pc">
+      <h3>Muestrario</h1>
+      <button id="button-group" class="color-selector">
+        <div id="red" class="button" style="color: white ; background-color: red"  > Rojo </div>
+        <div id="green" class="button" style="color: white ; background-color: green"  > Verde </div>
+        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
+        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
+        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
+        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
+        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
+        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
+        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
+        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
+      </button>
+      
+      <div id="square">
+        <h3 id="precio">$12500</h3>
+        <img id="img-fondo-transparente" style="background-color: burlywood;" src="/DeMilColores/jpegs/pintu/Megalux.png" alt="living fondo transparente" width="100%">
+        
+      </div>
+    </div>
+    <script src="js/cambioDeColores.js"></script>
     <footer class="footer"></footer>
   </div>
 

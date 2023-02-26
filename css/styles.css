@@ -2,22 +2,16 @@
     .main-layout{
         margin: 2svw;
     }
-    .main{
-        grid-column: span 4;
-    }
-    .promos{
+
+    .column-span-4-mob{
         grid-column: span 4;
     }
     .news{
         padding-top: none;
-        grid-column: span 4;
     }
     .news-img{
         grid-column: span 4;
         padding-top: none;
-    }
-    .articulos{
-        grid-column: span 4;
     }
 }
 
@@ -28,14 +22,17 @@
     .main{
         grid-column: span 3;
     }
+    .column-span-2-pc{
+        grid-column: span 2;
+    }
     .news{
         padding-top: 5rem;
-        grid-column: span 2;
     }
     .news-img{
         padding-top: 5rem;
-        grid-column: span 2;
     }
+    
+
 
 
     
@@ -75,7 +72,7 @@ html{
     display: grid;
     position: sticky;
     top:0%;
-    
+    opacity: 96%;
     grid-column:  span 4;
     padding-bottom: 1rem;
 
@@ -97,6 +94,28 @@ html{
 .articulos{
     padding-top: 5rem;
     color: azure;
+}
+
+.muestrario{
+    padding-top: 5rem;
+}
+
+#button-group{  
+    border: none;
+    background-color: aquamarine;
+    width: 100%;  
+    display: inline-block;
+    text-align: center;
+}
+#button-group > * {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    line-height: 50px;
+    cursor: pointer;
 }
 
 /* Menu, fotos, textos */
@@ -142,4 +161,9 @@ ul.vertical li a{
 .grid-col-span2{
     grid-column: span 2;
 }
-/*First Commit
+
+#precio{
+    position: absolute;
+    margin-top: 10%;
+    font-size: 36px;
+}
