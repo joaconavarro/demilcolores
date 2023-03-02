@@ -31,8 +31,6 @@
     .news-img{
         padding-top: 5rem;
     }
-    
-
 
 
     
@@ -81,6 +79,7 @@ html{
 .promos{
     background-color: #a1c3f5;
     text-align: center;
+    box-sizing: border-box;
 }
 .news{
     color: azure;
