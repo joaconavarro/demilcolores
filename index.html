@@ -5,140 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Mil Colores</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/rotatingCube.css">
-    
-    
+    <link rel="stylesheet" href="/DeMilColores/css/styles.css">
+    <link rel="stylesheet" href="/DeMilColores/css/stylesdefer.css">
+    <link rel="icon" type="image/png" href="/DeMilColores/jpegs/colibri.jpg" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
 </head>
-<body>
-  <div class="main-layout" id="home">
-    <header class="header grid-col-span4">
-      <img 
-        src="https://raw.githubusercontent.com/joaconavarro/demilcolores/master/jpegs/header.png"
-        alt="Logo De Mil Colores"
-        class="header-img"
-        style="width: max(90%, 300px);"
-      >      
-    </header>
-    <div class="menu">
-      <ul class="vertical">
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a class="menu" href="#news">News</a></li>
-        <li><a class="menu" href="javascript:void(0)">Contact</a></li>
-        <li><a class="menu" href="#articulos">Artículos</a></li>
-        <li><a class="menu" href="javascript:void(0)">About</a></li>
-        
-      </ul>
-    </div>
-    <main class="main column-span-4-mob">
-        <p class="main-text">Bienvenido a De Mil Colores, somos una pinturería de Moreno con mas de 25 años
-          de experiencia, un excelente staff, las mejores marcas, precios, promociones, y etc.
-          Estamos ubicados en Avenida Del Libertador 525 y España 284, a pocas cuadras de la estación.
-          Atendemos de Lunes a Viernes 8 a 19hs y Sábados de 8 a 13hs.<br><br>
-          Los esperamos!
-        </p>
-    </main>
-    <div class="promos column-span-4-mob">
-      <h1>PROMOS</h1>
-      <h2 class="text-promos" id="text-promos"> Casablanca Performance Interior x 20 Litros <br> $18680</h2>
-      <div class="wrapper">
+<body>    
+    <div id="page" class="site">
         <div class="container">
-          <div class="image-cube">
-            <div class="front">
-              <a href="https://www.instagram.com/demilcolores_pinturerias/" target="_blank">
-                <img src="jpegs/square1.png">
-              </a>              
-            </div>
-            <div class="right">              
-              <a href="https://www.instagram.com/demilcolores_pinturerias/" target="_blank">
-                <img src="jpegs/square2.png">
-              </a>            
-            </div>
-            <div class="back">              
-              <a href="https://www.instagram.com/demilcolores_pinturerias/" target="_blank">
-                <img src="jpegs/square3.png">
-              </a>              
-            </div> 
-            <div class="left">              
-              <a href="https://www.instagram.com/demilcolores_pinturerias/" target="_blank">
-                <img src="jpegs/square4.png">
-              </a>              
-            </div>
-                       
-          </div>          
+            <nav id="nav">
+                <ul id="ul">
+                    <li class="active" id="link-inicio"><a href="#inicio"><span>Inicio</span><i class="ri-home-5-line"></i></a></li>
+                    <li id="link-nosotros"><a href="/DeMilColores/nosotros.html"><span>Nosotros</span><i class="ri-store-3-fill"></i></a></li>
+                    <li id="link-articulos"><a href="/DeMilColores/articulos.html"><span>Artículos</span><i class="ri-paint-brush-line"></i></a></li>
+                    <li id="link-muestrario"><a href="/DeMilColores/muestrario.html"><span>Muestrario</span><i class="ri-palette-line"></i></a></li>
+                    <li id="link-contacto"><a href="/DeMilColores/contacto.html"><span>Contacto</span><i class="ri-whatsapp-line"></i></a></li>
+                </ul>
+            </nav>
+            <section>
+                <div id="inicio">
+                       <div class="img-container">
+                        <a href="#inicio"><img src="/DeMilColores/jpegs/logo dmc.webp" alt="" width:100%></a>                        
+                       </div>
+                    <div class="container-links-inicio">
+                      <ul class="links-ul">
+                        <div class="links-icons">
+                          <li><a href="/DeMilColores/search/search.html"><span></span><i class="ri-search-line"></i></a></li>
+                        </div>
+                        <div class="links-icons">
+                          <li><a href="https://wa.me/5491130415605?text=Bienvenido%20a%20De%20Mil%20Colores.%20Respondemos%20mensajes%20de%20Lunes%20a%20Viernes%20de%208%20a%2019hs,%20y%20Sábados%20de%208%20a%2013hs.%20Te%20asesoramos%20sin%20compromiso,%20tu%20consulta%20no%20molesta!"
+                            target="_blank"><span></span><i class="ri-whatsapp-line"></i></a></li>
+                        </div>
+                         <div class="links-icons">
+                          <li><a href="https://www.instagram.com/demilcolores_pinturerias/"
+                             target="_blank"><span></span><i class="ri-instagram-line"></i></a></li>
+                        </div>
+                        <div class="links-icons">
+                          <li><a href="https://m.facebook.com/100046444195037/" target="_blank"><span></span><i class="ri-facebook-circle-line"></i></a></li>
+                        </div>
+                        <div class="links-icons">
+                          <li><a href="https://goo.gl/maps/8v1ZBXYD5L1swM1KA" target="_blank"><span></span><i class="ri-map-pin-2-line"></i></a></li>
+                        </div>
+                       </ul>
+                    </div>
+                                  
+                </div>
+            </section>
         </div>
-      </div>      
-      <!--
-        <a href="https://www.instagram.com/demilcolores_pinturerias/" target="_blank"></a>
-      -->
-      
     </div>
-    <script src="js/changingText.js"></script>
-    <span class="news column-span-4-mob column-span-2-pc" id="news">
-      <span>
-        <h2>News</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
-        repellat esse modi nesciunt veniam aperiam eum ipsa reiciendis magnam quod labore amet corrupti
-        animi quam voluptas?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
-        repellat esse modi nesciunt veniam aperiam eum ipsa reiciendis magnam quod labore amet corrupti
-        animi quam voluptas?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
-        repellat esse modi nesciunt veniam aperiam eum ipsa reiciendis magnam quod labore amet corrupti
-        animi quam voluptas?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
-        repellat esse modi nesciunt veniam aperiam eum ipsa reiciendis magnam quod labore amet corrupti
-        animi quam voluptas?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
-        repellat esse modi nesciunt veniam aperiam eum ipsa reiciendis magnam quod labore amet corrupti
-        animi quam voluptas?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
-        repellat esse modi nesciunt veniam aperiam eum ipsa reiciendis magnam quod labore amet corrupti
-        animi quam voluptas?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
-        repellat esse modi nesciunt veniam aperiam eum ipsa reiciendis magnam quod labore amet corrupti
-        animi quam voluptas?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quisquam iure ea doloribus
-        repellat esse modi nesciunt veniam aperiam eum ipsa reiciendis magnam quod labore amet corrupti
-        animi quam voluptas?
-        </p>
-      </span>            
-    </span>
-    <div class="news-img column-span-2-pc">
-      
-    </div>
-
-    <div class="articulos column-span-4-mob column-span-2-pc" id="articulos">
-      <h2>Artículos</h2>
-      <img src="https://raw.githubusercontent.com/joaconavarro/demilcolores/master/jpegs/pintu/20230222_110659.jpg"
-      alt="Pintu productos" width="100%">
-    </div>
-
-
-    <div class="muestrario column-span-4-mob column-span-2-pc">
-      <h3>Muestrario</h1>
-      <button id="button-group" class="color-selector">
-        <div id="red" class="button" style="color: white ; background-color: red"  > Rojo </div>
-        <div id="green" class="button" style="color: white ; background-color: green"  > Verde </div>
-        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
-        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
-        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
-        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
-        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
-        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
-        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
-        <div id="blue" class="button" style="color: white ; background-color: blue"  > Azul </div>
-      </button>
-      
-      <div id="square">
-        <h3 id="precio">$12500</h3>
-        <img id="img-fondo-transparente" style="background-color: burlywood;" src="/DeMilColores/jpegs/pintu/Megalux.png" alt="living fondo transparente" width="100%">
-        
-      </div>
-    </div>
-    <script src="js/cambioDeColores.js"></script>
-    <footer class="footer"></footer>
-  </div>
-
+    <script src="js/navigator.js" defer> </script>
 </body>
 </html>
+     
+   

@@ -1,0 +1,113 @@
+section > div:nth-child(2){
+  background: #653ab6; 
+}
+.nosotros{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  
+}
+.container-nosotros-text{
+  grid-column: 1/9;
+  grid-row: 1/5;
+  overflow: hidden;
+}
+.container-nosotros-frente{
+  grid-column: 1/9;
+  grid-row: 1/10;
+  overflow: hidden;
+  background-color: rgb(217, 218, 212);
+}
+.nosotros-text{
+  padding-top: 6.5em;
+  text-align: center;
+  Font-family: Franklin Gothic, Arial Bold;
+  font-weight: 200;
+  font-size: 17px;
+  text-transform: none;
+}
+.nosotros-text2{
+  display: flex;
+  margin: 0 2rem 0 2rem;  
+  flex-basis: 0;
+  flex: 3;
+  gap: 1.5rem;
+  padding-top: 2em;
+  text-align: center;
+  Font-family: Franklin Gothic, Arial Bold;
+  font-weight: 200;
+  font-size: 17px;
+  text-transform: none;
+  color:#653ab6;  
+}
+.footer-text{
+  padding-top: 2.5em;
+  text-align: center;
+  Font-family: Franklin Gothic, Arial Bold;
+  font-weight: 200;
+  font-size: 17px;
+  text-transform: none;
+}
+.nosotros-text2 p{
+  padding-top: 2rem;
+}
+.nosotros-text2 img{
+  border-radius: 30px;
+  margin-top: 4em;
+}
+.wrapper{
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  grid-column: 1/9;
+  background-color: rgb(161, 161, 124);
+}
+.nosotros-galeria {
+  display: flex;
+  gap: 1rem;
+}
+
+.nosotros-galeria > div {
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.nosotros-galeria > div:hover {
+  flex: 5;
+}
+.nosotros-footer{
+  grid-column: 1/9;
+  grid-row: 9/12;
+  margin-top: 2em;
+}
+
+section > div:nth-child(3){
+  background: rgb(177, 177, 139);
+}
+#articulos{
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  
+}
+
+section > div:nth-child(4){
+  background-color: rgb(35, 153, 147);
+}
+
+
+section > div:nth-child(5){
+  background-color: rgb(77, 52, 221);
+}
+
+
+.colores{
+  display: flex;
+  grid-column: span 5;
+  
+}
+#contacto{
+  grid-template-columns: repeat(8, 1fr);
+  
+}
