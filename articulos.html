@@ -19,25 +19,24 @@
             <ul id="ul">
                 <li class="active" id="link-inicio"><a href="/DeMilColores/index.html"><span>Inicio</span><i class="ri-home-5-line"></i></a></li>
             </ul>
+            
       </nav>
+      <div class="logodmc">
+        <img src="/DeMilColores/jpegs/logo dmc.webp" alt="">
+      </div>
       <div class="tipos-de-articulos">
           <ul class="ul-articulos">
-            <li class="submenu">Látex <span class="caret ri-arrow-down-s-line"></span>
+            <li class="submenu"><a id="a-latex" href="#">Látex <span class="caret ri-arrow-down-s-line"></span></a>
                 <ul class="children">
-                  <li><a href="#">Interior</a></li>
-                  <li><a href="#">Exterior</a></li>        
+                  <li><a id="a-interior" href="#">Interior</a></li>
+                  <li><a id="a-exterior"href="#">Exterior</a></li>        
                 </ul>
             </li>
-            <li class="submenu">Esmaltes<span class="caret ri-arrow-down-s-line"></span>
-              <ul class="children">
-                <li><a href="#">Antióxido</a></li>
-                <li><a href="#">Convertidor</a></li>        
-              </ul>
-            </li>
+            <li class="submenu"><a id="a-esmaltes" href="#">Esmaltes</a></li>
             <li class="submenu">Aerosoles<span class="caret ri-arrow-down-s-line"></span>
               <ul class="children">
-                <li><a href="#">Sintéticos</a></li>
-                <li><a href="#">Grafiteros</a></li>        
+                <li><a id="a-aerosintetico" href="#">Sintéticos</a></li>
+                <li><a id="a-graff" href="#">Grafiteros</a></li>        
               </ul>
             </li>
             <li class="submenu">Accesorios <span class="caret ri-arrow-down-s-line"></span>
@@ -58,25 +57,38 @@
     <div class="destacados">
       <h3>Destacados</h3>
       <div>
-        <a href="">
-          <img src="/DeMilColores/jpegs/square4.png" alt="">
-        </a> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repellat magnam pariatur.</p>
+        <a href="https://articulo.mercadolibre.com.ar/MLA-1309185479-escalera-22-escalones-tipo-bombero-_JM#position=2&search_layout=stack&type=item&tracking_id=273b0439-8816-45b0-80da-05384265d332"
+        target="_blank">
+        <div>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_880217-MLA53282532662_012023-O.webp" alt="">        
+          <p>Escalera Tipo Bombero 22 Escalones</p>
+        </div>          
+      </a> 
       </div>
       <div>
-        <a href="">
-          <img src="/DeMilColores/jpegs/square1.png" alt="">
-        </a> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Repellat magnam pariatur.</p>
+        <a href="https://articulo.mercadolibre.com.ar/MLA-1268103606-chalk-paint-pintura-a-la-tiza-venier-x-1-litro-_JM#position=4&search_layout=stack&type=item&tracking_id=273b0439-8816-45b0-80da-05384265d332"
+        target="_blank">
+        <div>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_998344-MLA53703588446_022023-O.webp" alt="">
+          <p>Chalk Paint Venier Pintura A La Tiza X 1 L</p>
+        </div>          
+        </a>         
+      </div>
+      <div>
+        <a href="https://articulo.mercadolibre.com.ar/MLA-1267106546-membrana-en-pasta-techesco-blanca-x-20-lts-_JM#position=6&search_layout=stack&type=item&tracking_id=273b0439-8816-45b0-80da-05384265d332"
+        target="_blank">
+        <div>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_986602-MLA52713550066_122022-O.webp" alt="">
+          <p>Membrana En Pasta Techesco Blanca X 20 L</p>
+        </div>          
+        </a>
       </div>
     </div>
     
     
 
     <div class="articulos">
-      <div class="latex-int productos" class="active-list">
+      <div id="interior" class="latex-int productos" class="active-list">
         <div class="card">
           <div class="circle">
             <a href="">
@@ -129,23 +141,47 @@
           <p>Látex Interior/Exterior Dama x 20 L</p>
         </div>
       </div>
-      <div class="latex-ext productos">
+      <div id="exterior" class="latex-ext productos" style="display: none;">
         <div>
           <a href="">
-            <img src="/DeMilColores/jpegs/square2.png" alt="">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_740694-MLA49367631037_032022-O.webp" alt="">
           </a> 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repellat magnam pariatur.</p>
+          <p>Recuplast Frentes Blanco x 20 L</p>
         </div>
         <div>
           <a href="">
-            <img src="/DeMilColores/jpegs/square3.png" alt="">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_735740-MLA51392370625_092022-O.webp" alt="">
           </a> 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repellat magnam pariatur.</p>
+          <p>Casablanca Performance Frentes x 20 L</p>
         </div>
       </div>
+      <div id="esmaltes" class="esmaltes productos" style="display: none;">
+        <div>
+          <a href="">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_978747-MLA47337519485_092021-O.webp" alt="">
+          </a>        
+          <p>Esmalte Negro Brilloplast x 1L</p>
+        </div>
+      </div>
+      <div id="aerosintetico" class="aerosintetico productos" style="display: none;">
+        <div>
+          <a href="">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_624340-MLA47338819397_092021-O.webp" alt="">
+          </a>        
+          <p>Aerosol Kuwait Negro Mate x 240cc</p>
+        </div>
+      </div>
+      <div id="graff" class="graff productos" style="display: none;">
+        <div>
+          <a href="">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_627451-MLA41336641879_042020-O.webp" alt="">
+          </a>        
+          <p>Aerosol KWT Graff Rojo Cof x 440cc</p>
+        </div>
+      </div>
+      
     </div>
   </div>
+  <script src="/DeMilColores/js/articulos.js" defer></script>
 </body>
 </html>
