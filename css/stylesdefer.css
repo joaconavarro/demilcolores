@@ -95,13 +95,6 @@ section > div:nth-child(3){
 section > div:nth-child(4){
   background-color: rgb(35, 153, 147);
 }
-
-
-section > div:nth-child(5){
-  background-color: rgb(77, 52, 221);
-}
-
-
 .colores{
   display: flex;
   grid-column: span 5;
@@ -109,5 +102,5 @@ section > div:nth-child(5){
 }
 #contacto{
   grid-template-columns: repeat(8, 1fr);
-  
+  background-color: rgb(77, 52, 221);
 }

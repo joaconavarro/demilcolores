@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>.
-    <link rel="stylesheet" href="/DeMilColores/css/styles.css">
+    <title>Muestrario</title>
+    <link rel="stylesheet" href="/DeMilColores/css/contacto.css">
     <link rel="stylesheet" href="/DeMilColores/css/stylesdefer.css">
     <link rel="icon" type="image/png" href="/DeMilColores/jpegs/colibri.jpg" sizes="16x16">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet">
 </head>
-<body style="height: 100vh; display: grid; grid-template-rows: auto 1fr 1fr">
-    <div class="header-nav" style="grid-row: span 1/2; background-color: red; height: 8em;">
-        <nav id="nav-nosotros">
-            <ul id="ul">
-                <li class="active" id="link-inicio"><a href="/DeMilColores/index.html"><span>Inicio</span><i class="ri-home-5-line"></i></a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    
-    <div id="contacto" style="grid-row: 2/4; background-color: blue;">
-        <header class="header-site">
-            <div class="img-container"></div>       
-        </header>
+<body>
+    <div class="container" style="overflow: hidden;">
+        <div class="header-nav">
+            <nav id="nav-nosotros">
+                <ul id="ul">
+                    <li class="active" id="link-inicio"><a href="/DeMilColores/index.html"><span>Inicio</span><i class="ri-home-5-line"></i></a></li>
+                </ul>
+            </nav>
+            <div class="form-consulta">
+                <form id="enviar_consulta" action ="enviar_consulta.php" method = "POST">
+                    <input id=nombre type="text" name= "nombre" placeholder="Nombre" class="contacto_input" required>
+                    <br> 
+                    <input id="apellido" type="text" name= "apellido" placeholder="Apellido" class="contacto_input" required>
+                    <br> 
+                    <input id="celular" type="text" name= "celular" placeholder="Celular" class="contacto_input" required>
+                    <br>
+                    <input id="email" type="text" name= "email" placeholder="E-mail" class="contacto_input">
+                    <br>
+                    <br>  
+                    <textarea type="text" name= "mensaje" placeholder="Haga su consulta aquí: " 
+                    id="mensaje" cols="39" rows= "10"> </textarea>
+                    <br>      
+                    <input id= "enviar" type="submit" value= "Enviar" class="contacto_btn"> 
+                </form> 
+            </div>
+        </div>  
     </div>
 </body>
 </html>
