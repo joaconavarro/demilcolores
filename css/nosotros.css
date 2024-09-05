@@ -5,6 +5,25 @@
     box-shadow:rgba(50 50 93 / 55%) 0 5px 10px 1px,rgba(0 0 0 /26%) 0 5px 10px 5px;
     border-radius: 100%;
 }
+
+#nav ul{display:flex;align-items:center;padding-left:1em;padding-right:1em}
+nav :where(li,a){position:relative}
+nav ul li a{display:flex;align-items:center;justify-content:center;flex-direction:column-reverse;font-size:2.5em;line-height:1.3;width:80px;height:80px;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
+nav ul li a:hover{color:#3aa6d1}
+nav ul li a span{font-size:10px}
+#nav li::before,nav li::after{content:'';position:absolute;top:1px;height:100%;width:60px;transition:top .3s;background-color:#f7f7ff;}
+#nav-nosotros li::before,#nav-nosotros li::after{content:'';position:absolute;top:1px;height:100%;width:60px;transition:top .3s;background-color:#344997;}
+#nav li.active::before{left:-35px;border-radius:0 0 0 0}
+#nav-nosotros li.active::before{border-radius:0 0 0 0}
+#nav li.active::after{border-radius:0 0 0 0}
+#nav li.active::after{right:-35px;border-radius:0 0 0 0}
+#nav li.active::before,nav li.active::after{top:1px}
+#nav li a::before,nav li a::after{content:'';position:absolute;background-color:#344997;z-index:1;border-radius:0 0;-webkit-transform:translateY(-40px);transform:translateY(-40px);-webkit-transition:transform .3s,border-radius .3s;transition:transform .3s,border-radius .3s}
+nav li.active a::before,nav li.active a::after{-webkit-transform:translateY(0);transform:translateY(0)}
+nav li a span{z-index:10}nav li a i{z-index:10}
+#nav li.active a::before{height:80%;width:80%;border-radius:0 50% 50% 50%;transform:rotate(45deg)}
+#nav-nosotros li.active a::before{height:75%;width:75%;border-radius:0 50% 50% 50%;transform:rotate(45deg)}
+nav li.active a{color:#f7f7ff}
 #nav-nosotros:hover{
     background-color: rgb(165, 53, 137);
 }
